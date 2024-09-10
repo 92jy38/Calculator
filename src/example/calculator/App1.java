@@ -19,47 +19,47 @@ public class App1 {
                 System.out.println("프로그램을 종료합니다.");
                 break;
             }
-try {
-            // 첫 번째 양의 정수 입력
-            System.out.print("첫 번째 양의 정수를 입력하세요: ");
-            int num1 = scanner.nextInt();
+            try {
+                // 첫 번째 양의 정수 입력
+                System.out.print("첫 번째 양의 정수를 입력하세요: ");
+                int num1 = scanner.nextInt();
 
-            // 사칙연산 기호 입력
-            System.out.print("사칙연산 기호를 입력하세요 (+, -, *, /): ");
-            char operator = scanner.next().charAt(0);
+                // 사칙연산 기호 입력
+                System.out.print("사칙연산 기호를 입력하세요 (+, -, *, /): ");
+                char operator = scanner.next().charAt(0);
 
-            // 두 번째 양의 정수 입력
-            System.out.print("두 번째 양의 정수를 입력하세요: ");
-            int num2 = scanner.nextInt();
+                // 두 번째 양의 정수 입력
+                System.out.print("두 번째 양의 정수를 입력하세요: ");
+                int num2 = scanner.nextInt();
 
 
-            // 연산 수행 및 결과 출력
-            switch (operator) {
-                case '+':
-                    System.out.println("결과: " + (num1 + num2));
-                    break;
-                case '-':
-                    System.out.println("결과: " + (num1 - num2));
-                    break;
-                case '*':
-                    System.out.println("결과: " + (num1 * num2));
-                    break;
-                case '/':
-                    // 예외처리 분모 0으로 나누기
-                    if (num2 == 0) {
-                        System.out.println("오류: 나눗셈 연산에서 분모(두 번째 정수)에 0이 입력될 수 없습니다.");
-                    } else {
-                        System.out.println("결과: " + (num1 / num2));
-                    }
-                    break;
-                default:
-                    System.out.println("오류: 잘못된 연산 기호입니다.");
-                    break;
+                // 연산 수행 및 결과 출력
+                switch (operator) {
+                    case '+':
+                        System.out.println("결과: " + (num1 + num2));
+                        break;
+                    case '-':
+                        System.out.println("결과: " + (num1 - num2));
+                        break;
+                    case '*':
+                        System.out.println("결과: " + (num1 * num2));
+                        break;
+                    case '/':
+                        // 예외처리 분모 0으로 나누기
+                        if (num2 == 0) {
+                            System.out.println("오류: 나눗셈 연산에서 분모(두 번째 정수)에 0이 입력될 수 없습니다.");
+                        } else {
+                            System.out.println("결과: " + (num1 / num2));
+                        }
+                        break;
+                    default:
+                        System.out.println("오류: 잘못된 연산 기호입니다.");
+                        break;
+                }
+            } catch (InputMismatchException e) {
+                System.out.println("잘못 입력하셨습니다.");
+                scanner.next(); // 숫자 타입에 연산 넣었을 때 InputMistmatchException 오류 방지
             }
-        } catch (InputMismatchException e) {
-    System.out.println("잘못 입력하셨습니다.");
-    scanner.next(); // 숫자 타입에 연산 넣었을 때 InputMistmatchException 오류 방지
-}
         }
 
         scanner.close(); // Scanner 자원 해제

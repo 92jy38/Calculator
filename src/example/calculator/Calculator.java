@@ -1,4 +1,5 @@
 package example.calculator;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -7,7 +8,7 @@ public class Calculator {
     private List<Integer> results = new ArrayList<>();
 
     // 사칙연산을 수행하고 결과 반환 메서드
-    public int calculate(int num1,  char operator, int num2) {
+    public int calculate(int num1, char operator, int num2) {
         int result = 0;
         switch (operator) {
             case '+':
