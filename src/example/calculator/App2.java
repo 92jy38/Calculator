@@ -38,10 +38,10 @@ public class App2 {
                 System.out.println("결과: " + result);
             } catch (InputMismatchException e) {
                 System.out.println("잘못 입력하셨습니다.");
-                sc.next(); // 숫자 타입에 연산 넣었을 때 InputMistmatchException 오류 방지
+                sc.next();// 숫자 타입에 연산 넣었을 때 InputMistmatchException 오류 방지
             } catch (IllegalArgumentException e) {
                 System.out.println("오류: " + e.getMessage());
-                continue;
+                continue;// 메서드에 적절하지 않은 인수를 넣었을때 IllegalArgumentException 오류 방지
             }
 
             // 저장된 연산 결과 출력
