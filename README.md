@@ -38,7 +38,7 @@
 6. App1의 `InputMismatchException` 예외 처리에  `IllegalArgumentException` 예외 처리도 보완하여, 계산중 잘못된 입력으로 저장된 값들이 손실되지 않도록 2중으로 처리.
 
    
-<br>
+
 ### 예외처리 시연 이미지
 ![App1 오류 시연](https://github.com/user-attachments/assets/40bcfb3c-b2e5-4876-9fc9-239dff8caa1a)
 ![App2 오류 시연](https://github.com/user-attachments/assets/4ef5872f-5825-479d-891b-30b54c6b51a3)
