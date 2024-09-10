@@ -33,7 +33,7 @@ public class App2 {
 
             // 연산 수행 및 결과 출력
             try {
-                int result = calculator.calculate(num1, num2, operator);
+                int result = calculator.calculate(num1, operator, num2);
                 System.out.println("결과: " + result);
             } catch (IllegalArgumentException e) {
                 System.out.println("오류: " + e.getMessage());

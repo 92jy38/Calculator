@@ -7,7 +7,7 @@ public class Calculator {
     private List<Integer> results = new ArrayList<>();
 
     // 사칙연산을 수행하고 결과 반환 메서드
-    public int calculate(int num1, int num2, char operator) {
+    public int calculate(int num1,  char operator, int num2) {
         int result = 0;
         switch (operator) {
             case '+':
@@ -28,6 +28,7 @@ public class Calculator {
             default:
                 throw new IllegalArgumentException("잘못된 연산 기호입니다.");
         }
+
         // 연산 결과를 리스트에 저장
         results.add(result);
         return result;

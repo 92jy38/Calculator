@@ -1,5 +1,6 @@
 package example.calculator;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class App1 {
@@ -18,7 +19,7 @@ public class App1 {
                 System.out.println("프로그램을 종료합니다.");
                 break;
             }
-
+try {
             // 첫 번째 양의 정수 입력
             System.out.print("첫 번째 양의 정수를 입력하세요: ");
             int num1 = scanner.nextInt();
@@ -55,6 +56,10 @@ public class App1 {
                     System.out.println("오류: 잘못된 연산 기호입니다.");
                     break;
             }
+        } catch (InputMismatchException e) {
+    System.out.println("잘못 입력하셨습니다.");
+    scanner.next(); // 숫자 타입에 연산 넣었을 때 InputMistmatchException 오류 방지
+}
         }
 
         scanner.close(); // Scanner 자원 해제
