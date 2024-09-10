@@ -43,7 +43,7 @@ public class App2 {
             // 저장된 연산 결과 출력
             System.out.println("현재까지의 연산 결과: " + calculator.getResults());
 
-            // 가장 먼저 저장된 결과 삭제 여부 확인
+            // 가장 먼저 저장된 결과 삭제 확인
             System.out.print("가장 먼저 저장된 결과를 삭제하시겠습니까? (yes/no): ");
             String deleteInput = sc.next();
             if (deleteInput.equalsIgnoreCase("yes")) {
@@ -52,6 +52,6 @@ public class App2 {
             }
         }
 
-        sc.close(); // Scanner 자원 해제
+        sc.close(); // Scanner 끝
     }
 }

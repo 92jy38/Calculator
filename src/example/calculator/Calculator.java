@@ -6,7 +6,7 @@ public class Calculator {
     // 연산 결과를 저장하는 컬렉션 타입 필드 (캡슐화된 List)
     private List<Integer> results = new ArrayList<>();
 
-    // 사칙연산을 수행하고 결과를 반환하는 메서드
+    // 사칙연산을 수행하고 결과 반환 메서드
     public int calculate(int num1, int num2, char operator) {
         int result = 0;
         switch (operator) {
