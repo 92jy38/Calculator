@@ -1,4 +1,6 @@
 package example.calculator;
+
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class App2 {
@@ -18,23 +20,25 @@ public class App2 {
                 System.out.println("프로그램을 종료합니다.");
                 break;
             }
-
-            // 첫 번째 양의 정수 입력
-            System.out.print("첫 번째 양의 정수를 입력하세요: ");
-            int num1 = sc.nextInt();
-
-            // 사칙연산 기호 입력
-            System.out.print("사칙연산 기호를 입력하세요 (+, -, *, /): ");
-            char operator = sc.next().charAt(0);
-
-            // 두 번째 양의 정수 입력
-            System.out.print("두 번째 양의 정수를 입력하세요: ");
-            int num2 = sc.nextInt();
-
-            // 연산 수행 및 결과 출력
             try {
+                // 첫 번째 양의 정수 입력
+                System.out.print("첫 번째 양의 정수를 입력하세요: ");
+                int num1 = sc.nextInt();
+
+                // 사칙연산 기호 입력
+                System.out.print("사칙연산 기호를 입력하세요 (+, -, *, /): ");
+                char operator = sc.next().charAt(0);
+
+                // 두 번째 양의 정수 입력
+                System.out.print("두 번째 양의 정수를 입력하세요: ");
+                int num2 = sc.nextInt();
+
+                // 연산 수행 및 결과 출력
                 int result = calculator.calculate(num1, operator, num2);
                 System.out.println("결과: " + result);
+            } catch (InputMismatchException e) {
+                System.out.println("잘못 입력하셨습니다.");
+                sc.next(); // 숫자 타입에 연산 넣었을 때 InputMistmatchException 오류 방지
             } catch (IllegalArgumentException e) {
                 System.out.println("오류: " + e.getMessage());
                 continue;
