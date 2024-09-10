@@ -1,13 +1,13 @@
 # Calculator Project
 
 
-# 소개
+## 소개
 `App1` 클래스 없이 기본적인 사칙연산을 수행할 수 있는 계산기<br>
 `App2` 클래스를 적용해 기본적인 사칙연산을 수행할 수 있는 계산기<br>
 
 프로젝트 기간 : 24.09.04 ~ 24.09.10<br>
 <br>
-# TOOLS
+## Tools
 <img src="https://img.shields.io/badge/intellijidea-207BEA?style=for-the-badge&logo=intellij%20idea&logoColor=white"> SDK : Eclipse Temurin 17.0.12 <br> 
 <img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=java&logoColor=white"><br>
 <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white"><img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white"><br>
@@ -37,6 +37,8 @@
 5. `removeFirstResult()` 메서드로 가장 먼저 저장된 계산 결과 삭제 가능.
 6. App1의 `InputMismatchException` 예외 처리에  `IllegalArgumentException` 예외 처리도 보완하여, 계산중 잘못된 입력으로 저장된 값들이 손실되지 않도록 2중으로 처리.
 
+   
+<br>
 ### 예외처리 시연 이미지
 ![App1 오류 시연](https://github.com/user-attachments/assets/40bcfb3c-b2e5-4876-9fc9-239dff8caa1a)
 ![App2 오류 시연](https://github.com/user-attachments/assets/4ef5872f-5825-479d-891b-30b54c6b51a3)
