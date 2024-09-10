@@ -35,4 +35,4 @@
 3. `getResults()` 메서드로 저장된 모든 연산 결과 조회 가능. 캡슐화 되어있기때문에 복사본을 반환하고 원본 리스트 수정 불가.
 4. `setResults(List<Integer> newResults)` 메서드는 계산 결과 리스트를 수정할 때는 전달된 리스트`(newResults)`를 새로운 리스트로 복사하여 `results` 필드에 저장. 새로운 ArrayList로 복사하는 방식으로 외부 영향으로부터 내부 데이터 보호.
 5. `removeFirstResult()` 메서드로 가장 먼저 저장된 계산 결과 삭제 가능.
-6. App1의 `InputMismatchException` 예외 처리에  `IllegalArgumentException` 예외 처리도 보완하여 계산중 잘못된 입력으로 저장된 값들이 날라가지 않도록 2중으로 처리.
+6. App1의 `InputMismatchException` 예외 처리에  `IllegalArgumentException` 예외 처리도 보완하여, 계산중 잘못된 입력으로 저장된 값들이 손실되지 않도록 2중으로 처리.
